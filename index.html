@@ -18,12 +18,12 @@
 
     <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter text-sky-400">DEV.PORTFOLIO</div>
+            <div class="text-xl font-bold tracking-tighter text-sky-400">PORTFOLIO</div>
             <ul class="hidden md:flex space-x-8 text-sm font-medium">
-                <li><a href="#about" class="hover:text-sky-400 transition">About</a></li>
+                <li><a href="#about" class="hover:text-sky-400 transition">About Me</a></li>
+                <li><a href="#experience" class="hover:text-sky-400 transition">Work Experience</a></li>
                 <li><a href="#projects" class="hover:text-sky-400 transition">Projects</a></li>
-                <li><a href="#contact"
-                        class="px-4 py-2 bg-sky-500 text-slate-900 rounded-lg hover:bg-sky-400 transition">Contact</a>
+                <li><a href="#contact" class="hover:text-sky-400 transition">Contact</a>
                 </li>
             </ul>
         </div>
@@ -35,13 +35,12 @@
             Hello, I'm Heraldy
         </h1>
         <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
-            I'm a <span class="text-slate-100">Web Developer</span> focused on building interactive, accessible, and
-            performance-driven web applications.
+            I'm a <span class="text-slate-100">Full Stack Developer</span> mostly building website and sometimes mobile app.
         </p>
         <div class="flex gap-4">
             <a href="#projects"
-                class="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full hover:border-sky-500 transition">View
-                Work</a>
+                class="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full hover:border-sky-500 transition">View Work</a>
+            <a href="CV_Heraldy_Santoso.pdf" target="_blank" class="px-8 py-3 bg-emerald-600 rounded-full hover:bg-emerald-500 transition font-semibold">Download CV</a>
             <a href="https://github.com/baumkuchenn" target="_blank"
                 class="px-8 py-3 bg-sky-600 rounded-full hover:bg-sky-500 transition font-semibold">GitHub</a>
         </div>
@@ -58,23 +57,102 @@
                 <ul class="grid grid-cols-2 gap-2 text-sm text-sky-400">
                     <li>▹ JavaScript</li>
                     <li>▹ React / Next.js</li>
-                    <li>▹ Tailwind CSS</li>
                     <li>▹ Node.js</li>
                     <li>▹ Laravel</li>
                     <li>▹ Flutter</li>
+                    <li>▹ Rest API</li>
+                    <li>▹ MySQL</li>
+                    <li>▹ Git</li>
+                    <li>▹ Amazon Web Services (AWS)</li>
                 </ul>
             </div>
             <div class="relative group">
-                <div
-                    class="w-full aspect-square bg-sky-500/20 rounded-xl border-2 border-sky-500/50 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform">
+                <div class="absolute inset-0 bg-sky-500 rounded-xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform"></div>
+                <img src="profile.jpg" alt="Heraldy Santoso" class="relative z-10 w-full aspect-square object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500 border-2 border-slate-800">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="text-sky-400">02.</span> Experience & Education
+            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        </h2>
+
+        <div class="space-y-12">
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#38bdf8]"></div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl font-bold text-slate-100">Assistant Lecturer</h3>
+                    <span class="text-sky-400 font-mono text-sm">2023 — 2025</span>
                 </div>
+                <p class="text-slate-300 font-medium mb-2">Universitas Surabaya</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Responsible for assisting lecturers in the computer lab in Algorithm and Programming, Object Oriented Programming, Database, Advance Native Mobile Programming, and Web Framework Programming courses.
+                </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#38bdf8]"></div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl font-bold text-slate-100">Software Engineer Intern</h3>
+                    <span class="text-sky-400 font-mono text-sm">2024</span>
+                </div>
+                <p class="text-slate-300 font-medium mb-2">PT Multi Spunindo Jaya Tbk</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Tasked with creating a company travel management application from communication with employees, creating application flows, databases, user interfaces, and applications using Laravel, and deploying to the company server.
+                </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#38bdf8]"></div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl font-bold text-slate-100">Part Time Web Developer</h3>
+                    <span class="text-sky-400 font-mono text-sm">2025</span>
+                </div>
+                <p class="text-slate-300 font-medium mb-2">CV Teknologi Indonesia Maju</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Tasked with creating a government website for public service innovation proposal management, starting from proposal submission to proposal assessment using Laravel.
+                </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#38bdf8]"></div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl font-bold text-slate-100">Full Stack Developer</h3>
+                    <span class="text-sky-400 font-mono text-sm">2025 - Present</span>
+                </div>
+                <p class="text-slate-300 font-medium mb-2">PT Blackfish Code Squad</p>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Tasked with developing ERP (Enterprise Resource Planning) application based on website using laravel and mobile using flutter.
+                </p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1"></div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl font-bold text-slate-100">Mathematics and Natural Sciences Department</h3>
+                    <span class="text-slate-500 font-mono text-sm">2018 — 2021</span>
+                </div>
+                <p class="text-slate-300 font-medium mb-2">SMAN 1 Sidoarjo</p>
+                <p class="text-slate-400 text-sm italic">Average Final Score: 91.15</p>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1"></div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl font-bold text-slate-100">Informatics Engineering - Business Information Systems study program</h3>
+                    <span class="text-slate-500 font-mono text-sm">2021 — 2025</span>
+                </div>
+                <p class="text-slate-300 font-medium mb-2">Universitas Surabaya</p>
+                <p class="text-slate-400 text-sm italic">GPA: 3.895</p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-sky-400">02.</span> Projects
+            <span class="text-sky-400">03.</span> Projects
             <div class="h-[1px] bg-slate-700 flex-grow"></div>
         </h2>
 
@@ -101,7 +179,11 @@
         </div>
     </section>
 
-    <footer id="contact" class="py-12 border-t border-slate-800 text-center">
+    <div id="contact" class="flex justify-center space-x-6 mb-4">
+        <a href="mailto:heraldysantoso15@gmail.com" class="text-slate-400 hover:text-sky-400 transition">Email</a>
+        <a href="https://linkedin.com/in/heraldy-santoso-630476319" target="_blank" class="text-slate-400 hover:text-sky-400 transition">LinkedIn</a>
+    </div>
+    <footer class="py-12 border-t border-slate-800 text-center">
         <p class="text-slate-500 text-sm">Built by Heraldy &copy; 2025</p>
     </footer>
 
