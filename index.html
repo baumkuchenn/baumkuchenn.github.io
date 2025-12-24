@@ -8,58 +8,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Custom Baumkuchen Palette */
+        :root {
+            --cake-dark: #1a120b;    /* Deep Chocolate Base */
+            --cake-toast: #d97706;   /* Toasted Outer Layer (Amber-600) */
+            --cake-honey: #fbbf24;   /* Sweet Honey (Amber-400) */
+            --cake-cream: #fef3c7;   /* Vanilla Cream (Amber-100) */
+        }
         body {
             font-family: 'Inter', sans-serif;
+            background-color: var(--cake-dark);
         }
     </style>
 </head>
 
-<body class="bg-slate-900 text-slate-200">
+<body class="text-amber-50/90">
 
-    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <nav class="fixed w-full z-50 bg-[#1a120b]/80 backdrop-blur-md border-b border-amber-900/50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter text-sky-400">PORTFOLIO</div>
+            <div class="text-xl font-bold tracking-tighter text-amber-400 italic">
+                <svg class="w-8 h-8 mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="#d97706" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="35" stroke="#fbbf24" stroke-width="4"/>
+                    <circle cx="50" cy="50" r="25" stroke="#d97706" stroke-width="3"/>
+                    <circle cx="50" cy="50" r="15" stroke="#fef3c7" stroke-width="5"/>
+                </svg>
+                BAUMKUCHEN.DEV
+            </div>
             <ul class="hidden md:flex space-x-8 text-sm font-medium">
-                <li><a href="#about" class="hover:text-sky-400 transition">About</a></li>
-                <li><a href="#experience" class="hover:text-sky-400 transition">Experience</a></li>
-                <li><a href="#education" class="hover:text-sky-400 transition">Education</a></li>
-                <li><a href="#projects" class="hover:text-sky-400 transition">Projects</a></li>
-                <li><a href="#contact" class="hover:text-sky-400 transition">Contact</a></li>
+                <li><a href="#about" class="hover:text-amber-400 transition">About</a></li>
+                <li><a href="#experience" class="hover:text-amber-400 transition">Experience</a></li>
+                <li><a href="#projects" class="hover:text-amber-400 transition">Projects</a></li>
+                <li><a href="#contact" class="px-4 py-2 bg-amber-600 text-[#1a120b] rounded-lg hover:bg-amber-500 transition font-bold">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="h-screen flex flex-col justify-center items-center text-center px-6">
-        <h1
-            class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 bg-clip-text text-transparent">
             Hello, I'm Heraldy
         </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
-            I'm a <span class="text-slate-100">Full Stack Developer</span> mostly building websites and sometimes mobile
-            apps.
+        <p class="text-lg md:text-xl text-amber-200/60 max-w-2xl mb-8 leading-relaxed">
+            I'm a <span class="text-amber-100 font-semibold underline decoration-amber-600 underline-offset-4">Full Stack Developer</span> crafting layered digital experiences, much like my favorite cake.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="#projects"
-                class="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full hover:border-sky-500 transition">View
-                Work</a>
-            <a href="profile/CV_Heraldy_Santoso.pdf" target="_blank"
-                class="px-8 py-3 bg-emerald-600 rounded-full hover:bg-emerald-500 transition font-semibold">Download
-                CV</a>
-            <a href="https://github.com/baumkuchenn" target="_blank"
-                class="px-8 py-3 bg-sky-600 rounded-full hover:bg-sky-500 transition font-semibold">GitHub</a>
+            <a href="#projects" class="px-8 py-3 bg-amber-900/30 border border-amber-800 rounded-full hover:border-amber-500 transition">View Work</a>
+            <a href="profile/CV_Heraldy_Santoso.pdf" target="_blank" class="px-8 py-3 bg-amber-600 text-stone-900 rounded-full hover:bg-amber-500 transition font-bold shadow-lg shadow-amber-900/20">Download CV</a>
+            <a href="https://github.com/baumkuchenn" target="_blank" class="px-8 py-3 bg-stone-800 rounded-full hover:bg-stone-700 transition font-semibold border border-stone-700">GitHub</a>
         </div>
     </header>
 
     <section id="about" class="py-24 max-w-4xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-8 flex items-center gap-4">
-            <span class="text-sky-400">01.</span> About Me
-            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            <span class="text-amber-500">01.</span> About Me
+            <div class="h-[1px] bg-amber-900/50 flex-grow"></div>
         </h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="md:col-span-2 space-y-4 text-slate-400">
+            <div class="md:col-span-2 space-y-4 text-amber-100/70">
                 <p>I am a passionate developer who enjoys learning or building new stuff i wanna know. Here are a few
                     technologies I’ve been working with recently:</p>
-                <ul class="grid grid-cols-2 gap-2 text-sm text-sky-400 font-mono">
+                <ul class="grid grid-cols-2 gap-2 text-sm text-amber-400 font-mono">
                     <li>▹ JavaScript</li>
                     <li>▹ REST API</li>
                     <li>▹ Next.js (React, TypeScript)</li>
@@ -71,147 +79,145 @@
                 </ul>
             </div>
             <div class="relative group max-w-[250px] mx-auto">
-                <div
-                    class="absolute inset-0 bg-sky-500 rounded-xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform">
-                </div>
-                <img src="profile/profile.jpg" alt="Heraldy Santoso"
-                    class="relative z-10 w-full aspect-square object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500 border-2 border-slate-800">
+                <div class="absolute inset-0 bg-amber-600 rounded-xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform"></div>
+                <img src="profile/profile.jpg" alt="Heraldy Santoso" class="relative z-10 w-full aspect-square object-cover rounded-xl border-2 border-amber-900">
             </div>
         </div>
     </section>
 
     <section id="experience" class="py-24 max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-sky-400">02.</span> Work Experience
-            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4 text-amber-50">
+            <span class="text-amber-500">02.</span> Work Experience
+            <div class="h-[1px] bg-amber-900/50 flex-grow"></div>
         </h2>
-        <div class="space-y-12">
-            <div class="relative pl-8 border-l-2 border-slate-700">
-                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#38bdf8]"></div>
-                <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                    <h3 class="text-xl font-bold text-slate-100">Full Stack Developer</h3>
-                    <span class="text-sky-400 font-mono text-sm">2025 — Present</span>
+        <div class="space-y-12 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-amber-600 before:via-amber-900 before:to-transparent">
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-4 h-4 rounded-full border border-[#1a120b] bg-amber-500 shadow-[0_0_12px_#fbbf24] absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10 transition-transform group-hover:scale-125"></div>
+                
+                <div class="w-[calc(100%-2rem)] md:w-[45%] bg-amber-950/20 p-6 rounded-2xl border border-amber-900/30 hover:border-amber-500/50 transition-all ml-8 md:ml-0">
+                    <div class="flex flex-col mb-1">
+                        <h3 class="text-xl font-bold text-amber-100">Full Stack Developer</h3>
+                        <span class="text-amber-500 font-mono text-xs font-bold uppercase tracking-widest">2025 — Present</span>
+                    </div>
+                    <p class="text-amber-200/80 font-medium text-sm mb-3">PT Blackfish Code Squad</p>
+                    <p class="text-amber-50/60 text-sm leading-relaxed">Developing ERP applications using Laravel (Web) and Flutter (Mobile).</p>
                 </div>
-                <p class="text-slate-300 font-medium mb-2">PT Blackfish Code Squad</p>
-                <p class="text-slate-400 text-sm leading-relaxed">Developing ERP applications using Laravel (Web) and
-                    Flutter (Mobile).</p>
             </div>
 
-            <div class="relative pl-8 border-l-2 border-slate-700">
-                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1"></div>
-                <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                    <h3 class="text-xl font-bold text-slate-100">Part Time Web Developer</h3>
-                    <span class="text-sky-400 font-mono text-sm">2025</span>
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-4 h-4 rounded-full border border-[#1a120b] bg-amber-700 absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10 transition-transform group-hover:scale-125"></div>
+                <div class="w-[calc(100%-2rem)] md:w-[45%] bg-amber-950/10 p-6 rounded-2xl border border-amber-900/30 hover:border-amber-500/50 transition-all ml-8 md:ml-0">
+                    <div class="flex flex-col mb-1">
+                        <h3 class="text-xl font-bold text-amber-100">Part Time Web Developer</h3>
+                        <span class="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest">2025</span>
+                    </div>
+                    <p class="text-amber-200/80 font-medium text-sm mb-3">CV Teknologi Indonesia Maju</p>
+                    <p class="text-amber-50/60 text-sm leading-relaxed">Built a government website for public service innovation proposal management using Laravel.</p>
                 </div>
-                <p class="text-slate-300 font-medium mb-2">CV Teknologi Indonesia Maju</p>
-                <p class="text-slate-400 text-sm leading-relaxed">Built a government website for public service
-                    innovation proposal management using Laravel.</p>
             </div>
 
-            <div class="relative pl-8 border-l-2 border-slate-700">
-                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1"></div>
-                <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                    <h3 class="text-xl font-bold text-slate-100">Software Engineer Intern</h3>
-                    <span class="text-sky-400 font-mono text-sm">2024</span>
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-4 h-4 rounded-full border border-[#1a120b] bg-amber-700 absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10 transition-transform group-hover:scale-125"></div>
+                <div class="w-[calc(100%-2rem)] md:w-[45%] bg-amber-950/10 p-6 rounded-2xl border border-amber-900/30 hover:border-amber-500/50 transition-all ml-8 md:ml-0">
+                    <div class="flex flex-col mb-1">
+                        <h3 class="text-xl font-bold text-amber-100">Software Engineer Intern</h3>
+                        <span class="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest">2024</span>
+                    </div>
+                    <p class="text-amber-200/80 font-medium text-sm mb-3">PT Multi Spunindo Jaya Tbk</p>
+                    <p class="text-amber-50/60 text-sm leading-relaxed">Created a company official travel management application from flow design to deployment using Laravel.</p>
                 </div>
-                <p class="text-slate-300 font-medium mb-2">PT Multi Spunindo Jaya Tbk</p>
-                <p class="text-slate-400 text-sm leading-relaxed">Created a company official travel management application from
-                    flow design to deployment using Laravel.</p>
             </div>
 
-            <div class="relative pl-8 border-l-2 border-slate-700">
-                <div class="absolute w-4 h-4 bg-sky-500 rounded-full -left-[9px] top-1"></div>
-                <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                    <h3 class="text-xl font-bold text-slate-100">Assistant Lecturer</h3>
-                    <span class="text-sky-400 font-mono text-sm">2023 — 2025</span>
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-4 h-4 rounded-full border border-[#1a120b] bg-amber-700 absolute left-0 md:left-1/2 md:-translate-x-1/2 z-10 transition-transform group-hover:scale-125"></div>
+                <div class="w-[calc(100%-2rem)] md:w-[45%] bg-amber-950/10 p-6 rounded-2xl border border-amber-900/30 hover:border-amber-500/50 transition-all ml-8 md:ml-0">
+                    <div class="flex flex-col mb-1">
+                        <h3 class="text-xl font-bold text-amber-100">Assistant Lecturer</h3>
+                        <span class="text-amber-600 font-mono text-xs font-bold uppercase tracking-widest">2023 — 2025</span>
+                    </div>
+                    <p class="text-amber-200/80 font-medium text-sm mb-3">Universitas Surabaya</p>
+                    <p class="text-amber-50/60 text-sm leading-relaxed">Assisted in Algorithm and Programming, Object Oriented Programming, Database, Advance Native Mobile Programming, and Web Framework courses.</p>
                 </div>
-                <p class="text-slate-300 font-medium mb-2">Universitas Surabaya</p>
-                <p class="text-slate-400 text-sm leading-relaxed">Assisted in Algorithm and Programming, Object Oriented
-                    Programming, Database, Advance Native Mobile Programming, and Web Framework courses.</p>
             </div>
-        </div>
+
+            </div>
     </section>
 
     <section id="education" class="py-24 max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-sky-400">03.</span> Education
-            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4 text-amber-50">
+            <span class="text-amber-500">03.</span> Education
+            <div class="h-[1px] bg-amber-900/50 flex-grow"></div>
         </h2>
-        <div class="space-y-10">
-            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-800 hover:border-sky-500/50 transition">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold text-slate-100 leading-tight">Informatics Engineering - Business
-                        Information Systems</h3>
-                    <span class="text-sky-400 font-mono text-sm shrink-0 ml-4">2021 — 2025</span>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="relative p-6 bg-amber-950/20 rounded-2xl border border-amber-900/50 overflow-hidden group">
+                <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-amber-600/10 rounded-full blur-2xl group-hover:bg-amber-600/20 transition-all"></div>
+                
+                <span class="text-amber-500 font-mono text-xs font-bold uppercase block mb-2">2021 — 2025</span>
+                <h3 class="text-xl font-bold text-amber-50 leading-tight mb-1">Informatics Engineering - Business Information Systems</h3>
+                <p class="text-amber-200/60 text-sm mb-4">Universitas Surabaya</p>
+                <div class="inline-block px-3 py-1 rounded-full bg-amber-600 text-[#1a120b] font-bold text-sm">
+                    GPA: 3.895
                 </div>
-                <p class="text-slate-300">Universitas Surabaya</p>
-                <p class="text-emerald-400 font-bold mt-2 font-mono text-lg italic underline">GPA: 3.895</p>
             </div>
 
-            <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-800">
-                <div class="flex justify-between mb-2">
-                    <h3 class="text-xl font-bold text-slate-100">Mathematics and Natural Sciences</h3>
-                    <span class="text-slate-500 font-mono text-sm">2018 — 2021</span>
-                </div>
-                <p class="text-slate-300">SMAN 1 Sidoarjo</p>
-                <p class="text-slate-400 text-sm mt-1 italic">Average Final Score: 91.15</p>
+            <div class="relative p-6 bg-stone-900/30 rounded-2xl border border-stone-800 group">
+                <span class="text-amber-700 font-mono text-xs font-bold uppercase block mb-2">2018 — 2021</span>
+                <h3 class="text-xl font-bold text-stone-200 leading-tight mb-1">Mathematics and Sciences</h3>
+                <p class="text-stone-500 text-sm mb-4">SMAN 1 Sidoarjo</p>
+                <p class="text-stone-400 text-xs italic">Average Final Score: 91.15</p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
-            <span class="text-sky-400">04.</span> Projects
-            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4 text-amber-50">
+            <span class="text-amber-500">04.</span> Projects
+            <div class="h-[1px] bg-amber-900/50 flex-grow"></div>
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
-            <div 
-                onclick="openModal('Choir Community', 'A comprehensive management and e-ticketing ecosystem for choir organizations. Features automated ticket generation and community administration, deployed on Amazon Web Services (AWS) infrastructure.', Array.from({length: 5}, (_, i) => `images/choir_community/${i + 1}.jpg`), 'Laravel, MySQL, Amazon Web Services (AWS)')"
-                class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
-                <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
-                <h3 class="text-2xl font-bold mb-4 italic">Choir Community</h3>
-                <p class="text-slate-400 mb-6">A comprehensive management and e-ticketing ecosystem for choir organizations. Features automated ticket generation and community administration, deployed on Amazon Web Services (AWS) infrastructure.</p>
-                <div class="flex gap-4 text-sm font-mono text-slate-500">
+            <div onclick="openModal('Choir Community', 'A comprehensive management and e-ticketing ecosystem for choir organizations. Features automated ticket generation and community administration, deployed on Amazon Web Services (AWS) infrastructure.', Array.from({length: 5}, (_, i) => `images/choir_community/${i + 1}.jpg`), 'Laravel, MySQL, Amazon Web Services (AWS)')"
+                 class="bg-amber-950/20 border border-amber-900/40 p-8 rounded-2xl hover:bg-amber-900/30 transition cursor-pointer group">
+                <div class="text-amber-500 mb-4 font-mono text-sm group-hover:translate-x-1 transition-transform italic underline underline-offset-4">View Details →</div>
+                <h3 class="text-2xl font-bold mb-4 italic text-amber-100">Choir Community</h3>
+                <p class="text-amber-200/60 mb-6">A comprehensive management and e-ticketing ecosystem for choir organizations. Features automated ticket generation and community administration, deployed on Amazon Web Services (AWS) infrastructure.</p>
+                <div class="flex gap-4 text-sm font-mono text-amber-600/80 font-bold">
                     <span>Laravel</span><span>MySQL</span><span>Amazon Web Services (AWS)</span>
                 </div>
             </div>
-            <div 
-                onclick="openModal('Law Discussion', 'A secure consultation and forum platform for Kantor Notaris Dewi Wijaya. Implemented real-time discussions and professional-client workflows using Next.js and Supabase and deployed on Vercel.', Array.from({length: 5}, (_, i) => `images/law_discuss/${i + 1}.jpg`), 'Next.js, Supabase, Vercel')"
-                class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
-                <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
-                <h3 class="text-2xl font-bold mb-4 italic">Law Discussion</h3>
-                <p class="text-slate-400 mb-6">A secure consultation and forum platform for Kantor Notaris Dewi Wijaya. Implemented real-time discussions and professional-client workflows using Next.js and Supabase and deployed on Vercel.</p>
-                <div class="flex gap-4 text-sm font-mono text-slate-500">
+            <div onclick="openModal('Law Discussion', 'A secure consultation and forum platform for Kantor Notaris Dewi Wijaya. Implemented real-time discussions and professional-client workflows using Next.js and Supabase and deployed on Vercel.', Array.from({length: 5}, (_, i) => `images/law_discuss/${i + 1}.jpg`), 'Next.js, Supabase, Vercel')"
+                 class="bg-amber-950/20 border border-amber-900/40 p-8 rounded-2xl hover:bg-amber-900/30 transition cursor-pointer group">
+                <div class="text-amber-500 mb-4 font-mono text-sm group-hover:translate-x-1 transition-transform italic underline underline-offset-4">View Details →</div>
+                <h3 class="text-2xl font-bold mb-4 italic text-amber-100">Law Discussion</h3>
+                <p class="text-amber-200/60 mb-6">A secure consultation and forum platform for Kantor Notaris Dewi Wijaya. Implemented real-time discussions and professional-client workflows using Next.js and Supabase and deployed on Vercel.</p>
+                <div class="flex gap-4 text-sm font-mono text-amber-600/80 font-bold">
                     <span>Next.js</span><span>Supabase</span><span>Vercel</span>
                 </div>
             </div>
-            <div 
-                onclick="openModal('BERP (PT Blackfish Code Squad)', 'An enterprise resource planning (ERP) system for business with a feature of production, purchasing, sales, and inventory management connected into marketplace (Eg. Shopee, Tiktok) via API.', Array.from({length: 5}, (_, i) => `images/berp/${i + 1}.jpg`), 'Laravel, MySQL, Flutter')"
-                class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
-                <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
-                <h3 class="text-2xl font-bold mb-4 italic">BERP (PT Blackfish Code Squad)</h3>
-                <p class="text-slate-400 mb-6">An enterprise resource planning (ERP) system for business with a feature of production, purchasing, sales, and inventory management connected into marketplace (Eg. Shopee, Tiktok) via API.</p>
-                <div class="flex gap-4 text-sm font-mono text-slate-500">
+            <div onclick="openModal('BERP (PT Blackfish Code Squad)', 'An enterprise resource planning (ERP) system for business with a feature of production, purchasing, sales, and inventory management connected into marketplace (Eg. Shopee, Tiktok) via API.', Array.from({length: 5}, (_, i) => `images/berp/${i + 1}.jpg`), 'Laravel, MySQL, Flutter')"
+                 class="bg-amber-950/20 border border-amber-900/40 p-8 rounded-2xl hover:bg-amber-900/30 transition cursor-pointer group">
+                <div class="text-amber-500 mb-4 font-mono text-sm group-hover:translate-x-1 transition-transform italic underline underline-offset-4">View Details →</div>
+                <h3 class="text-2xl font-bold mb-4 italic text-amber-100">BERP (PT Blackfish Code Squad)</h3>
+                <p class="text-amber-200/60 mb-6">An enterprise resource planning (ERP) system for business with a feature of production, purchasing, sales, and inventory management connected into marketplace (Eg. Shopee, Tiktok) via API.</p>
+                <div class="flex gap-4 text-sm font-mono text-amber-600/80 font-bold">
                     <span>Laravel</span><span>MySQL</span><span>Flutter</span>
                 </div>
             </div>
-            <div 
-                onclick="openModal('Vehicle Management', 'An enterprise-grade fleet tracking system. Developed automated maintenance scheduling and real-time vehicle status monitoring to optimize operational efficiency. Deployed on Niaga Hoster.', Array.from({length: 5}, (_, i) => `images/vehicle_management/${i + 1}.jpg`), 'Laravel, MySQL, Niaga Hoster')"
-                class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
-                <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
-                <h3 class="text-2xl font-bold mb-4 italic">Vehicle Management</h3>
-                <p class="text-slate-400 mb-6">An enterprise-grade fleet tracking system. Developed automated maintenance scheduling and real-time vehicle status monitoring to optimize operational efficiency. Deployed on Niaga Hoster.</p>
-                <div class="flex gap-4 text-sm font-mono text-slate-500">
+            <div onclick="openModal('Vehicle Management', 'An enterprise-grade fleet tracking system. Developed automated maintenance scheduling and real-time vehicle status monitoring to optimize operational efficiency. Deployed on Niaga Hoster.', Array.from({length: 5}, (_, i) => `images/vehicle_management/${i + 1}.jpg`), 'Laravel, MySQL, Niaga Hoster')"
+                 class="bg-amber-950/20 border border-amber-900/40 p-8 rounded-2xl hover:bg-amber-900/30 transition cursor-pointer group">
+                <div class="text-amber-500 mb-4 font-mono text-sm group-hover:translate-x-1 transition-transform italic underline underline-offset-4">View Details →</div>
+                <h3 class="text-2xl font-bold mb-4 italic text-amber-100">Vehicle Management</h3>
+                <p class="text-amber-200/60 mb-6">An enterprise-grade fleet tracking system. Developed automated maintenance scheduling and real-time vehicle status monitoring to optimize operational efficiency. Deployed on Niaga Hoster.</p>
+                <div class="flex gap-4 text-sm font-mono text-amber-600/80 font-bold">
                     <span>Laravel</span><span>MySQL</span><span>Niaga Hoster</span>
                 </div>
             </div>
-            <div 
-                onclick="openModal('Official Travel Management (PT Multi Spunindo Jaya Tbk)', 'An official travel management system for the company. Developed from application, approval, finance, and reporting.', Array.from({length: 5}, (_, i) => `images/travel_management/${i + 1}.jpg`), 'Laravel, MySQL')"
-                class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
-                <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
-                <h3 class="text-2xl font-bold mb-4 italic">Official Travel Management (PT Multi Spunindo Jaya Tbk)</h3>
-                <p class="text-slate-400 mb-6">An official travel management system for the company. Developed from application, approval, finance, and reporting.</p>
-                <div class="flex gap-4 text-sm font-mono text-slate-500">
+            <div onclick="openModal('Official Travel Management (PT Multi Spunindo Jaya Tbk)', 'An official travel management system for the company. Developed from application, approval, finance, and reporting.', Array.from({length: 5}, (_, i) => `images/travel_management/${i + 1}.jpg`), 'Laravel, MySQL')"
+                 class="bg-amber-950/20 border border-amber-900/40 p-8 rounded-2xl hover:bg-amber-900/30 transition cursor-pointer group">
+                <div class="text-amber-500 mb-4 font-mono text-sm group-hover:translate-x-1 transition-transform italic underline underline-offset-4">View Details →</div>
+                <h3 class="text-2xl font-bold mb-4 italic text-amber-100">Official Travel Management (PT Multi Spunindo Jaya Tbk)</h3>
+                <p class="text-amber-200/60 mb-6">An official travel management system for the company. Developed from application, approval, finance, and reporting.</p>
+                <div class="flex gap-4 text-sm font-mono text-amber-600/80 font-bold">
                     <span>Laravel</span><span>MySQL</span>
                 </div>
             </div>
@@ -219,52 +225,36 @@
     </section>
 
     <section id="contact" class="py-32 max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-sky-400 font-mono mb-4 text-lg font-bold underline italic">05. What's Next?</h2>
-        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 text-slate-100 tracking-tight">Get In Touch</h2>
-        <p class="text-slate-400 mb-10 max-w-lg mx-auto leading-relaxed">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my
-            best to get back to you!
+        <h2 class="text-amber-500 font-mono mb-4 text-lg font-bold italic">05. What's Next?</h2>
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 text-amber-50 tracking-tight">Get In Touch</h2>
+        <p class="text-amber-200/60 mb-10 max-w-lg mx-auto leading-relaxed">
+            I'm currently looking for new opportunities. My inbox is always open!
         </p>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-            <a href="mailto:heraldysantoso15@gmail.com"
-                class="px-10 py-4 border border-sky-400 text-sky-400 rounded-lg hover:bg-sky-400/10 transition-all font-semibold text-lg">
-                Say Hello
-            </a>
-            <div class="flex gap-6 items-center">
-                <a href="https://linkedin.com/in/heraldy-santoso-630476319" target="_blank"
-                    class="text-slate-400 hover:text-sky-400 transition-colors font-medium">LinkedIn</a>
-                <span class="text-slate-700">/</span>
-                <a href="https://github.com/baumkuchenn" target="_blank"
-                    class="text-slate-400 hover:text-sky-400 transition-colors font-medium">GitHub</a>
-            </div>
-        </div>
+        <a href="mailto:heraldysantoso15@gmail.com" class="px-10 py-4 border border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-stone-950 transition-all font-bold text-lg">
+            Say Hello
+        </a>
     </section>
 
     <div id="projectModal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4">
-        <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal()"></div>
-        
-        <div class="relative bg-slate-800 border border-slate-700 max-w-4xl w-full rounded-2xl overflow-hidden shadow-2xl">
-            <button onclick="closeModal()" class="absolute top-4 right-4 z-50 bg-slate-900/50 text-white w-10 h-10 rounded-full hover:bg-slate-700 transition">&times;</button>
-            
-            <div class="relative group bg-black h-[400px] flex items-center justify-center">
+        <div class="absolute inset-0 bg-stone-950/95 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="relative bg-stone-900 border border-amber-900/50 max-w-4xl w-full rounded-2xl overflow-hidden shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-50 bg-stone-800 text-amber-500 w-10 h-10 rounded-full">&times;</button>
+            <div class="relative group bg-stone-950 h-[400px] flex items-center justify-center">
                 <img id="modalImg" src="" class="max-w-full max-h-full object-contain">
-                
-                <button onclick="prevImage()" class="absolute left-4 bg-slate-900/60 p-2 rounded-full text-white hover:bg-sky-500 transition">❮</button>
-                <button onclick="nextImage()" class="absolute right-4 bg-slate-900/60 p-2 rounded-full text-white hover:bg-sky-500 transition">❯</button>
-                
-                <div id="imageCounter" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/80 px-3 py-1 rounded text-xs font-mono text-sky-400"></div>
+                <button onclick="prevImage()" class="absolute left-4 bg-amber-900/60 p-2 rounded-full text-amber-100 hover:bg-amber-500">❮</button>
+                <button onclick="nextImage()" class="absolute right-4 bg-amber-900/60 p-2 rounded-full text-amber-100 hover:bg-amber-500">❯</button>
+                <div id="imageCounter" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-amber-900/80 px-3 py-1 rounded text-xs font-mono text-amber-200"></div>
             </div>
-            
             <div class="p-8">
-                <h3 id="modalTitle" class="text-3xl font-bold text-white mb-2 italic"></h3>
-                <p id="modalTech" class="text-sky-400 font-mono text-sm mb-4 tracking-widest"></p>
-                <p id="modalDesc" class="text-slate-300 leading-relaxed"></p>
+                <h3 id="modalTitle" class="text-3xl font-bold text-amber-50 mb-2 italic"></h3>
+                <p id="modalTech" class="text-amber-500 font-mono text-sm mb-4 tracking-widest"></p>
+                <p id="modalDesc" class="text-amber-200/70 leading-relaxed"></p>
             </div>
         </div>
     </div>
 
-    <footer class="py-8 border-t border-slate-800 text-center">
-        <p class="text-slate-500 text-xs tracking-widest uppercase">Built by Heraldy Santoso &copy; 2025</p>
+    <footer class="py-8 border-t border-amber-900/30 text-center">
+        <p class="text-amber-900 text-xs tracking-widest uppercase font-bold">Built by Heraldy Santoso &copy; 2025</p>
     </footer>
 
     <script>
@@ -309,6 +299,5 @@
         }
     </script>
 
-</body>
-
+    </body>
 </html>
