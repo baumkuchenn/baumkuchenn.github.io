@@ -42,7 +42,7 @@
             <a href="#projects"
                 class="px-8 py-3 bg-slate-800 border border-slate-700 rounded-full hover:border-sky-500 transition">View
                 Work</a>
-            <a href="CV_Heraldy_Santoso.pdf" target="_blank"
+            <a href="profile/CV_Heraldy_Santoso.pdf" target="_blank"
                 class="px-8 py-3 bg-emerald-600 rounded-full hover:bg-emerald-500 transition font-semibold">Download
                 CV</a>
             <a href="https://github.com/baumkuchenn" target="_blank"
@@ -72,7 +72,7 @@
                 <div
                     class="absolute inset-0 bg-sky-500 rounded-xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform">
                 </div>
-                <img src="profile.jpg" alt="Heraldy Santoso"
+                <img src="profile/profile.jpg" alt="Heraldy Santoso"
                     class="relative z-10 w-full aspect-square object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500 border-2 border-slate-800">
             </div>
         </div>
@@ -124,8 +124,8 @@
                     <span class="text-sky-400 font-mono text-sm">2023 — 2025</span>
                 </div>
                 <p class="text-slate-300 font-medium mb-2">Universitas Surabaya</p>
-                <p class="text-slate-400 text-sm leading-relaxed">Assisted in Algorithm, OOP, Database, and Web
-                    Framework courses.</p>
+                <p class="text-slate-400 text-sm leading-relaxed">Assisted in Algorithm and Programming, Object Oriented
+                    Programming, Database, Advance Native Mobile Programming, and Web Framework courses.</p>
             </div>
         </div>
     </section>
@@ -164,7 +164,7 @@
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
             <div 
-                onclick="openModal('Choir Community', 'A comprehensive management and e-ticketing ecosystem for choir organizations. Features automated ticket generation and community administration, deployed on Amazon Web Services (AWS) infrastructure.', '', 'Laravel, MySQL, Amazon Web Services (AWS)')"
+                onclick="openModal('Choir Community', 'A comprehensive management and e-ticketing ecosystem for choir organizations. Features automated ticket generation and community administration, deployed on Amazon Web Services (AWS) infrastructure.', Array.from({length: 5}, (_, i) => `images/choir_community/${i + 1}.jpg`), 'Laravel, MySQL, Amazon Web Services (AWS)')"
                 class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
                 <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
                 <h3 class="text-2xl font-bold mb-4 italic">Choir Community</h3>
@@ -174,7 +174,7 @@
                 </div>
             </div>
             <div 
-                onclick="openModal('Law Discussion', 'A secure consultation and forum platform for Kantor Notaris Dewi Wijaya. Implemented real-time discussions and professional-client workflows using Next.js and Supabase and deployed on Vercel.', '', 'Next.js, Supabase, Vercel')"
+                onclick="openModal('Law Discussion', 'A secure consultation and forum platform for Kantor Notaris Dewi Wijaya. Implemented real-time discussions and professional-client workflows using Next.js and Supabase and deployed on Vercel.', Array.from({length: 5}, (_, i) => `images/law_discuss/${i + 1}.jpg`), 'Next.js, Supabase, Vercel')"
                 class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
                 <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
                 <h3 class="text-2xl font-bold mb-4 italic">Law Discussion</h3>
@@ -184,7 +184,7 @@
                 </div>
             </div>
             <div 
-                onclick="openModal('Vehicle Management', 'An enterprise-grade fleet tracking system. Developed automated maintenance scheduling and real-time vehicle status monitoring to optimize operational efficiency. Deployed on Niaga Hoster.', '', 'Laravel, MySQL, Niaga Hoster')"
+                onclick="openModal('Vehicle Management', 'An enterprise-grade fleet tracking system. Developed automated maintenance scheduling and real-time vehicle status monitoring to optimize operational efficiency. Deployed on Niaga Hoster.', Array.from({length: 5}, (_, i) => `images/vehicle_management/${i + 1}.jpg`), 'Laravel, MySQL, Niaga Hoster')"
                 class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl hover:bg-slate-800 transition">
                 <div class="text-sky-400 mb-4 font-mono text-sm">Full Stack Application</div>
                 <h3 class="text-2xl font-bold mb-4 italic">Vehicle Management</h3>
